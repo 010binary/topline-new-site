@@ -27,7 +27,7 @@ export default function PrivateMentorshipBanner() {
 
                     {/* CTA Button */}
                     <div className="pt-4">
-                        <button className="px-8 py-3 md:px-10 md:py-4 rounded-full bg-gradient-to-r from-purple-500 to-purple-600 text-white font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105">
+                        <button className="px-8 py-3 md:px-10 md:py-4 rounded-full bg-linear-to-r from-purple-500 to-purple-600 text-white font-semibold hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105">
                             Book a Session Now
                         </button>
                     </div>

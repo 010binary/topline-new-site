@@ -25,7 +25,7 @@ export default function Header() {
                     <div className="py-2">
                         <div className="flex justify-between items-center h-16">
                             {/* Logo */}
-                            <Link href="/" className="flex-shrink-0">
+                            <Link href="/" className="shrink-0">
                                 <Image src="/logo.png" alt="bennydc" width={120} height={40} className="h-10 w-auto" />
                             </Link>
 
@@ -53,7 +53,7 @@ export default function Header() {
                                 <button className="px-6 py-2 border border-gray-500 text-gray-300 rounded-lg hover:border-gray-400 hover:text-white transition-colors text-sm font-medium">
                                     Bookings
                                 </button>
-                                <button className="px-6 py-2 bg-gradient-to-r from-purple-600 to-purple-500 text-white rounded-lg hover:from-purple-700 hover:to-purple-600 transition-colors text-sm font-medium">
+                                <button className="px-6 py-2 bg-linear-to-r from-purple-600 to-purple-500 text-white rounded-lg hover:from-purple-700 hover:to-purple-600 transition-colors text-sm font-medium">
                                     Broker
                                 </button>
                             </div>
@@ -82,7 +82,7 @@ export default function Header() {
                             <h2 className="text-white text-2xl font-semibold">Menu</h2>
                             <button
                                 onClick={() => setIsMenuOpen(false)}
-                                className="px-4 py-2 bg-gradient-to-r from-purple-600 to-purple-500 text-white rounded-full hover:from-purple-700 hover:to-purple-600 transition-colors flex items-center gap-2 font-medium"
+                                className="px-4 py-2 bg-linear-to-r from-purple-600 to-purple-500 text-white rounded-full hover:from-purple-700 hover:to-purple-600 transition-colors flex items-center gap-2 font-medium"
                                 aria-label="Close menu"
                             >
                                 <X className="w-5 h-5" />

@@ -22,7 +22,7 @@ export default function Home() {
               buttonText="Learn More"
               imagePosition="right"
           >
-              <div className="w-full h-full bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center">
+              <div className="w-full h-full bg-linear-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center">
                   <span className="text-gray-300">AI Trading Bot Image</span>
               </div>
           </ShowcaseSection>

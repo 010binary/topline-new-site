@@ -13,7 +13,7 @@ export default function ReviewsSection() {
     return (
         <section className="relative w-full bg-slate-950 py-16 md:py-24 lg:py-32 overflow-hidden">
             {/* Background gradient */}
-            <div className="absolute inset-0 bg-gradient-to-b from-slate-950 via-purple-950/20 to-slate-950 pointer-events-none" />
+            <div className="absolute inset-0 bg-linear-to-b from-slate-950 via-purple-950/20 to-slate-950 pointer-events-none" />
 
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header Section */}
@@ -23,16 +23,16 @@ export default function ReviewsSection() {
                 </div>
 
                 {/* Main Card Section */}
-                <div className="bg-gradient-to-r from-purple-950/40 to-slate-900/40 backdrop-blur-sm rounded-3xl p-8 md:p-12 lg:p-16 border border-purple-500/20">
+                <div className="bg-linear-to-r from-purple-950/40 to-slate-900/40 backdrop-blur-sm rounded-3xl p-8 md:p-12 lg:p-16 border border-purple-500/20">
                     <div className="flex flex-col md:flex-row lg:flex-row items-center justify-between gap-8 md:gap-12">
                         {/* Left Section - Avatars (Mobile: Center, Tablet/Desktop: Left) */}
-                        <div className="flex flex-col items-center md:items-start lg:items-start gap-6 md:gap-8 flex-shrink-0">
+                        <div className="flex flex-col items-center md:items-start lg:items-start gap-6 md:gap-8 shrink-0">
                             {/* Overlapping Avatars */}
                             <div className="flex -space-x-4">
                                 {avatars.map((avatar, index) => (
                                     <div
                                         key={avatar.id}
-                                        className="w-16 md:w-20 h-16 md:h-20 rounded-full bg-gradient-to-br from-purple-400 to-blue-500 border-4 border-white flex items-center justify-center text-white font-bold text-sm md:text-base shadow-lg hover:scale-110 transition-transform"
+                                        className="w-16 md:w-20 h-16 md:h-20 rounded-full bg-linear-to-br from-purple-400 to-blue-500 border-4 border-white flex items-center justify-center text-white font-bold text-sm md:text-base shadow-lg hover:scale-110 transition-transform"
                                         style={{ zIndex: avatars.length - index }}
                                     >
                                         <img
@@ -52,8 +52,8 @@ export default function ReviewsSection() {
                         </div>
 
                         {/* Right Section - Button (Mobile: Full Width, Tablet/Desktop: Right) */}
-                        <div className="w-full md:w-auto flex-shrink-0">
-                            <button className="w-full md:w-auto px-8 md:px-10 py-3 md:py-4 bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-semibold rounded-full transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-purple-500/50">
+                        <div className="w-full md:w-auto shrink-0">
+                            <button className="w-full md:w-auto px-8 md:px-10 py-3 md:py-4 bg-linear-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white font-semibold rounded-full transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-purple-500/50">
                                 <span>Contact us</span>
                                 <Phone size={20} />
                             </button>
