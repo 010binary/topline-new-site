@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+import Container from "@/components/layout/container";
 
 interface Feature {
     icon: React.ReactNode
@@ -66,12 +67,13 @@ const features: Feature[] = [
 export default function FeaturesSection() {
     return (
         <section className="relative w-full bg-slate-950 py-16 md:py-24 overflow-hidden">
+        <Container>
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                 <div className="absolute w-96 h-96 md:w-[600px] md:h-[600px] bg-purple-600 rounded-full blur-3xl opacity-20" />
             </div>
 
             {/* Content container */}
-            <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="relative z-10 w-full max-w-7xl mx-auto lg:px-8">
                 {/* Header */}
                 <div className="text-center mb-12 md:mb-16">
                     <p className="text-purple-400 text-sm md:text-base font-semibold tracking-widest uppercase mb-4">
@@ -99,6 +101,7 @@ export default function FeaturesSection() {
                     ))}
                 </div>
             </div>
+        </Container>
         </section>
     )
 }
