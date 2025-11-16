@@ -10,12 +10,12 @@ export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     const menuItems = [
-        { label: "Mentorship", href: "/mentorship" },
-        { label: "Robot", href: "/robot" },
-        { label: "Trade Signal", href: "/trade-signal" },
-        { label: "Reviews", href: "/reviews" },
-        { label: "Book a Session", href: "/bookings" },
-        { label: "Broker", href: "/broker" },
+        { label: "Mentorship", href: "/pricing", desktop: true },
+        { label: "Robot", href: "/bot", desktop: true },
+        { label: "Trade Signal", href: "/#trade-signal", desktop: true },
+        { label: "Reviews", href: "/#reviews", desktop: true },
+        { label: "Book a Session", href: "/book", desktop: false },
+        { label: "Broker", href: "/broker", desktop: false },
     ]
 
     return (
@@ -31,21 +31,17 @@ export default function Header() {
 
                             {/* Desktop Menu Items */}
                             <div className="hidden md:flex items-center gap-8">
-                                <Link href="/mentorship" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
-                                    Mentorship
-                                </Link>
-                                <Link href="/robot" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
-                                    Robot
-                                </Link>
-                                <Link
-                                    href="/trade-signal"
-                                    className="text-gray-300 hover:text-white transition-colors text-sm font-medium"
-                                >
-                                    Trade Signal
-                                </Link>
-                                <Link href="/reviews" className="text-gray-300 hover:text-white transition-colors text-sm font-medium">
-                                    Reviews
-                                </Link>
+
+                                {menuItems.map((item) => (
+                                    (item.desktop && <Link
+                                        key={item.href}
+                                        href={item.href}
+                                        className="text-gray-300 hover:text-white transition-colors text-sm font-medium"
+                                        onClick={() => setIsMenuOpen(false)}
+                                    >
+                                        {item.label}
+                                    </Link>)
+                                ))}
                             </div>
 
                             {/* Desktop Buttons */}
