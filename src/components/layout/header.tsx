@@ -20,7 +20,7 @@ export default function Header() {
 
     return (
         <>
-            <nav className="bg-slate-950 border-b border-slate-800">
+            <nav className="bg-primary-background">
                 <Container >
                     <div className="py-2">
                         <div className="flex justify-between items-center h-16">
