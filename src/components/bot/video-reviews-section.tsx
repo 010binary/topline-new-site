@@ -1,3 +1,5 @@
+import Container from "../layout/container";
+
 export default function VideoReviewsSection() {
     const videoReviews = [
         "/videos/video1.mp4",
@@ -7,8 +9,8 @@ export default function VideoReviewsSection() {
     ];
 
     return (
-        <section className="bg-primary-background px-4 py-16 md:py-24">
-            <div className="max-w-7xl mx-auto">
+        <Container>
+            <section className="bg-primary-background px-4 py-8 md:py-16">
                 {/* Header */}
                 <div className="mb-12">
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-3">
@@ -37,7 +39,7 @@ export default function VideoReviewsSection() {
                         ))}
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </Container>
     );
 }

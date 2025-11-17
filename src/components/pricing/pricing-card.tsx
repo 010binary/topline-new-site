@@ -66,7 +66,7 @@ const pricingTiers: PricingTier[] = [
     },
 ]
 
-const PaymentMethods = () => (
+export const PaymentMethods = () => (
     <div className="flex gap-2 justify-center mt-6">
         <Image src={PaymentIcon} alt="Visa" className="px-8" />
     </div>
